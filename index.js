@@ -1,15 +1,15 @@
 var katzDeliLine = [];
 
-function takeANumber(katzDeliLine, name) {
-    katzDeliLine.push(name);
-    return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line.";
+function takeANumber(katzDeliLine) {
+    katzDeliLine.push("ticket");
+    return "Welcome, " + ". You are number " + katzDeliLine.length + " in line.";
 }
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length > 0) {{
-    var name = katzDeliLine[0];
-    katzDeliLine.shift();
-    return "Currently serving " + name + ".";
+   // var name = katzDeliLine[0];
+   // katzDeliLine.shift();
+    return "Currently serving " + katzDeliLine.length + ".";
     } 
     return katzDeliLine;
 }
